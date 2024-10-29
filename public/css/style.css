@@ -1,0 +1,273 @@
+
+    :root{
+        --tinypadding: 5%;
+        --thinpadding: 15%;
+        --smallpadding: 20%;
+        --mediumpadding: 25%;
+        --highpadding: 30%;
+        --bigpadding: 40%;
+        margin: auto;
+        width: 950px;
+    }
+    html {
+       margin: 0;
+       padding: 0;
+       scroll-behavior: smooth;
+       overflow-x: hidden;
+    }
+    body{
+        margin: 0;
+    }
+    p {
+      font-size: 12;
+    }
+    .content-top{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .content-top .logo{
+        width: 20%;
+        margin: 40px 40px 20px 40px;
+    }
+    .content-top .logo img{
+        width: 100%;
+    }
+    .content-top .green-top{
+        width: 65%;
+    }
+    .content-top .green-top img{
+        width: 100%;
+    }
+    .content-bottom .green-bottom{
+        position: absolute;
+        bottom: 0;
+        width: 40%;
+    }
+    .content-bottom .green-bottom img{
+        width: 100%;
+    }
+    
+    .container{
+        padding: 15px 35px 0px 35px;
+    }
+    .container p, .container h3, .container h1, li, .main-table, .header-table {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 12px;
+    }
+    .desc-list li {
+        margin-bottom: 5px;
+    }
+     .body-table{
+        width: 100%;
+        margin: 0 0 10px 0;
+     }
+     .title-table{
+        padding: 1px 10px;
+        /* background: #32a05f; */
+        background: linear-gradient(90deg, #32a05f 0%, rgba(130,214,152,1) 100%);
+        color: #ffff;
+     }
+     .title-table h1{
+        font-size: 12px;
+        font-weight: bold;
+        /* margin: 0; */
+     }
+     .header-label h1{
+        font-size: 12px;
+        font-weight: bold;
+     }
+     .item-content{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+     }
+     .item-content.gray{
+         background: #f8f8f8;
+         padding: 0px 10px;
+     }
+     .item-content.gray-solid{
+        background: #f0f0f0;
+        padding: 0px 10px;
+     }
+     .item-content.green{
+        /* background: #32a05f; */
+        background: linear-gradient(90deg, #32a05f 0%, rgba(130,214,152,1) 100%);
+        padding: 0px 10px;
+        color: #ffff;
+     }
+     .item-content.gray .title{
+        width: var(--bigpadding);
+     }
+     .item-content.gray .notes, .item-content.gray-solid .notes, .item-content.green .notes{
+        width: var(--smallpadding);
+     }
+     .item-content.gray-solid .title{
+        width: var(--bigpadding);
+     }
+     .item-content.gray .price, .item-content.gray-solid .price, .item-content.green .price{
+        text-align: right;
+        width: var(--mediumpadding);
+     }
+     .item-content.green .title{
+        width: var(--bigpadding);
+     }
+     .item-content.gray .notes, .item-content.gray-solid .notes, .item-content.green .notes{
+        text-align: center;
+     }
+     .item-content h1{
+         font-size: 12px;
+         font-weight: normal;
+     }
+     .item-content .bold h1{
+         font-weight: bold;
+         font-size: 12px;
+     }
+     .item-content.gray .title-small, .item-content.gray-solid .title-small, .item-content.green .title-small {
+        width: var(--highpadding);
+     }
+     .item-content.gray .currency-symbol, .item-content.gray-solid .currency-symbol, .item-content.green .currency-symbol {
+         width: var(--tinypadding);
+         text-align: left;
+     }
+     .item-content.gray .value, .item-content.gray-solid .value, .item-content.green .value {
+        width: var(--smallpadding);
+        text-align: left;
+     }
+     .item-content.gray .final-price, .item-content.gray-solid .final-price, .item-content.green .final-price {
+        width: var(--mediumpadding);
+        text-align: left;
+     }
+     .item-content.gray .final-price-extended, .item-content.gray-solid .final-price-extended, .item-content.green .final-price-extended {
+        width: var(--mediumpadding)+var(--tinypadding);
+        text-align: left;
+     }
+     .identity-text span {
+         font-weight: bold;
+         color: #32a05f;
+     }
+     .header-row  {
+        background-color: #32a05f;
+        color: #ffffff;
+     }
+     .main-table {
+        width: 100%;
+        /* border: 1px solid black; */
+        border-spacing: 0px;
+     }
+     .main-table td {
+        padding: 5px;
+     }
+     /* .main-table td {
+        border: 1px solid black;
+     } */
+     .academic-column {
+        width: 5%;
+     }
+     .year-column {
+        width: 10%;
+     }
+     .currency-header-column {
+        width: 15%;
+     }
+     .currency-column {
+        width: 3%;
+     }
+     .value-column {
+        width: 15%;
+     }
+     .period-column {
+        width: 10%;
+     }
+     header, footer {
+        margin: 0;
+        display: flex;
+        justify-content: center;
+     }
+
+     header > .logo {
+        padding: 35px;
+     }
+
+     header > .logo > img {
+        width: 220px;
+        height: 150px;
+     }
+
+     header > .design {
+        position: relative;
+        width:100%;
+        height: 200px;
+        overflow: hidden;
+        background-color: transparent;
+     }
+
+     header > .design::before {
+        width:100%;
+        height: 200px;
+        background-color: rgb(130,214,152);
+        content: "";
+        position: absolute;
+        right: -30px;
+        top: -150px;
+        transform: rotate(10deg);
+     }
+
+     header > .design::after {
+        width:100%;
+        height: 200px;
+        background-image: linear-gradient(to right, #3a843b, rgba(75, 220, 114, 0.8));
+        content: "";
+        position: absolute;
+        right: -100px;
+        top: -190px;
+        transform: rotate(20deg);
+     }
+
+     footer {
+         width: 100%;
+         height:300px;
+        max-height: 300px;
+        position: relative;
+        bottom: 0;
+     }
+
+     footer > .design {
+        position: absolute;
+        width: 20%;
+        height: 300px;
+        bottom: 0;
+        left: 0;
+        content: " ";
+        background-color: transparent;
+        overflow: hidden;
+     }
+
+     footer > .design::before {
+        width: 100%;
+        height: 200px;
+        background-color: rgb(130,214,152);
+        content: "";
+        position: absolute;
+        left: -20px;
+        bottom: -171px;
+        transform: rotate(15deg);
+     }
+
+     footer > .design::after {
+        width: 100%;
+        height: 200px;
+        background-image: linear-gradient(to right, rgba(75, 220, 114, 0.8), #3a843b);
+        content: "";
+        position: absolute;
+        left: -125px;
+        bottom: -143px;
+        transform: rotate(30deg);
+     }
+
+     .justify-left {
+        justify-content: flex-start !important;
+     }
